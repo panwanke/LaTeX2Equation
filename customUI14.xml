@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+  <ribbon>
+    <tabs>
+      <tab id="tabLaTeX2Eq" label="LaTeX公式">
+        <group id="grpConvert" label="转换">
+          <button id="btnSelection"
+                  label="转换选中文本"
+                  size="large"
+                  imageMso="EquationInsertNew"
+                  onAction="OnConvertSelectedText"
+                  screentip="转换选中的LaTeX文本为公式"
+                  supertip="选中包含$...$或$$...$$的文本后点击此按钮，将其转换为PowerPoint公式。" />
+          <button id="btnCurrentSlide"
+                  label="转换当前页"
+                  size="large"
+                  imageMso="EquationInsertGallery"
+                  onAction="OnConvertCurrentSlide"
+                  screentip="转换当前幻灯片所有LaTeX公式"
+                  supertip="自动扫描当前幻灯片中所有文本框，将$...$或$$...$$包裹的LaTeX公式转换为PowerPoint公式。" />
+          <button id="btnAllSlides"
+                  label="转换全部"
+                  size="large"
+                  imageMso="SlideShowFromBeginning"
+                  onAction="OnConvertAllSlides"
+                  screentip="转换整个演示文稿所有LaTeX公式"
+                  supertip="遍历所有幻灯片，将所有$...$或$$...$$包裹的LaTeX公式转换为PowerPoint公式。" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
