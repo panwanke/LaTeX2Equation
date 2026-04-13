@@ -21,6 +21,8 @@
 
 示例文本：`The equation $E=mc^2$ is famous.`
 
+![](figs/LaTeX2Equation.webp)
+
 ## 制作 .ppam 加载项（制作者操作）
 
 ### 第一步：创建带宏的演示文稿
